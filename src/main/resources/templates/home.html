@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Halaman Utama</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            min-height: 100vh;
+        }
+        .card-kategori {
+            border: none;
+            border-radius: 16px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-kategori:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+        }
+        .judul {
+            text-shadow: 1px 2px 3px rgba(0,0,0,0.4);
+        }
+    </style>
+</head>
+<body>
+<div class="container py-5 text-center">
+    <h1 class="judul mb-4">📚 Sistem Informasi Data Santri</h1>
+    <p class="lead">Pilih jenjang madrasah untuk melihat data santri:</p>
+
+    <div class="row mt-5 justify-content-center g-4">
+        <div class="col-md-3">
+            <a href="/santri/kategori/MI" class="text-decoration-none">
+                <div class="card card-kategori bg-success text-white p-4">
+                    <h3>Madrasah Ibtidaiyah</h3>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-3">
+            <a href="/santri/kategori/MTS" class="text-decoration-none">
+                <div class="card card-kategori bg-primary text-white p-4">
+                    <h3>Madrasah Tsanawiyah</h3>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-3">
+            <a href="/santri/kategori/MA" class="text-decoration-none">
+                <div class="card card-kategori bg-warning text-dark p-4">
+                    <h3>Madrasah Aliyah</h3>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="mt-5">
+        <a href="/santri" class="btn btn-outline-light btn-lg">📋 Lihat Semua Santri</a>
+    </div>
+</div>
+</body>
+</html>

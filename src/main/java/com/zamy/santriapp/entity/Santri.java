@@ -20,9 +20,9 @@ public class Santri {
     private String asalDaerah;
     private String namaOrtu;
     private String noTelpOrtu;
-    private String foto; // nama file foto
+    
 
-    // Getter & Setter
+    // Getter dan Setter
     public Long getId() {
         return id;
     }
@@ -79,6 +79,8 @@ public class Santri {
         this.noTelpOrtu = noTelpOrtu;
     }
 
+    private String foto;
+
     public String getFoto() {
         return foto;
     }
@@ -86,4 +88,5 @@ public class Santri {
     public void setFoto(String foto) {
         this.foto = foto;
     }
+
 }

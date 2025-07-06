@@ -1,8 +1,10 @@
 package com.zamy.santriapp.repository;
 
-import com.zamy.santriapp.entity.Santri; // ✅ BUKAN model.Santri
+import java.util.List; // 
+
 import org.springframework.data.jpa.repository.JpaRepository;
-import java.util.List;
+
+import com.zamy.santriapp.entity.Santri;
 
 public interface SantriRepository extends JpaRepository<Santri, Long> {
     List<Santri> findByNamaSantriContainingIgnoreCase(String keyword);
